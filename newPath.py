@@ -1,6 +1,6 @@
 author='Abdallah Sobehy, Fred Aklamanu'
 author_email='abdallah.sobehy@telecom-sudparis.eu,fred.aklamanu@telecom-sudparis.eu',
-date='December 1, 2015'		
+date='1/12/2015'		
 
 from pymongo import MongoClient				 # pymongo drivers and client instance
 import networkx as nx

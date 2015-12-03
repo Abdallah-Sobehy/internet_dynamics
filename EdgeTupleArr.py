@@ -8,7 +8,7 @@ start_time = time.time()
 start_dict = {}
 stop_dict = {}
 # Traverse the orignal EdgeTuple file and store start,stop arrays in dictonary form
-with open('PartialDataset/EdgeTuple.csv', 'rb') as csvfile:
+with open('PartialDataset/validEdgeTuple.csv', 'rb') as csvfile:
     next(csvfile) # To ignore the first line
     reader = csv.reader(csvfile, delimiter=';')
     for row in reader:
@@ -33,7 +33,7 @@ with open('PartialDataset/EdgeTuple.csv', 'rb') as csvfile:
 
 # Loop the dictionaries to write the EdgeTuple file in the new format
 
-newEdgeTuple = open('PartialDataset/custom/EdgeTuple.csv', 'w')
+newEdgeTuple = open('PartialDataset/custom/validEdgeTuple.csv', 'w')
 for key, value in start_dict.iteritems():
 	line = key + ';' + str(value) + ';' + str(stop_dict[key]) + '\n'
 	newEdgeTuple.write(line)

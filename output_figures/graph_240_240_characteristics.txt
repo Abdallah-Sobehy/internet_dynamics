@@ -1,0 +1,7 @@
+Av. degree 2.3
+Diamaeter = 40
+Average path length:12.13
+Number of shortest paths: 417041050
+Graph Density = 0
+Page Rank (p = 0.85, Eplison = 0.001)
+Average clustering coefficient: 0.015

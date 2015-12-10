@@ -123,8 +123,6 @@ def draw_path_mongodb(source, destination):
 # @param destination ip id 
 # Writes the graph in a .gexf file
 def draw_path(source,destination):
-	
-
 	G = nx.DiGraph() # Directed to show the direction of the flow
 	# Source and destination nodes of the path
 	src = 1316
@@ -243,7 +241,7 @@ def test_internet_rounds(start_in, stop_in):
 	    		# Assuming the edge is not good, the flag will be set to True if start_in or stop_in lie in the good range
 	    		good_edge = False
 	    		for i in xrange(len(start_arr)):
-	    			if ! ((int(start_arr[i]) < start_in and int(stop_arr[i]) < start_in) or (int(start_arr[i]) > stop_in and int(stop_arr[i]) > stop_in)):
+	    			if not ((int(start_arr[i]) < start_in and int(stop_arr[i]) < start_in) or (int(start_arr[i]) > stop_in and int(stop_arr[i]) > stop_in)):
 	    				good_edge = True
 	    		if good_edge == False: raise SystemExit('Edge: ', edge_id, ' is not in the good range')
 	    		else: good_edge = False 
